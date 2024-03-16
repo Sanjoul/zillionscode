@@ -1,12 +1,18 @@
 import React from "react";
 
-export default function Quote() {
+export default function ContactUs() {
     return (
-        <div className="gray-card">
-            <main>
-                <div className="quote-form">
-                    <h1>Request a Quote</h1>
-                    <p>Your journey with us is marked by open communication and collaborative ideation. We believe in building not just projects but lasting partnerships.</p>
+        <div className="flex w-650px p-60 flex-col justify-center items-start gap-40">
+            <main className="w-full bg-gradient-to-r from-gray-900 to-gray-600 p-60 gap-40">
+                <div>
+                    <div className="quote-info flex flex-col justify-center items-start gap-20">
+                        <h1 className="text-white font-Aeonik font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
+                            Request a Quote<span style={{ color: "var(--Orange, #F15A24)" }}>_</span>
+                        </h1>
+                        <p className="text-gray-500 font-Aeonik-Fono text-sm sm:text-base mt-5">
+                            Your journey with us is marked by open communication and collaborative ideation. We believe in building not just projects but lasting partnerships.
+                        </p>
+                    </div>
 
                     <form action="/submit-quote" method="post">
                         <input type="email" placeholder="Business Email" required />
@@ -21,7 +27,7 @@ export default function Quote() {
                             <input type="checkbox" /> Branding<br />
                             <input type="checkbox" /> Mobile App Development<br />
                             <input type="checkbox" /> SEO Optimization<br />
-                            <input type="checkbox" /> Mainenance Support<br />
+                            <input type="checkbox" /> Maintenance Support<br />
                         </div>
 
                         <button type="submit">Send</button>
