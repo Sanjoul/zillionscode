@@ -1,7 +1,13 @@
-import { Navbar } from "@/Components/Navbar";
-import Image from "next/image";
-
+"use client";
+import React, { useState } from "react";
+import ContactUs from "@/Components/ContactUs";
 export default function Home() {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
+  const toggleContactDialog = () => {
+    setIsContactOpen(!isContactOpen);
+  };
+
   return (
     <>
       <div className="w-[1440px] h-[4410px] relative bg-neutral-900">
@@ -35,9 +41,18 @@ export default function Home() {
               </div>
             </div>
             <div className="px-10 py-5 bg-white justify-center items-center gap-2.5 flex">
-              <div className="text-stone-950 text-sm font-bold font-['Aeonik TRIAL']">
+              <button
+                className="text-stone-950 text-sm font-bold font-['Aeonik TRIAL']"
+                onClick={toggleContactDialog}
+              >
                 Contact us
-              </div>
+              </button>
+
+              {isContactOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                  <ContactUs onClose={toggleContactDialog} />
+                </div>
+              )}
             </div>
           </div>
         </div>
