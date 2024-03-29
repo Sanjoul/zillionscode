@@ -7,18 +7,7 @@ body {
   margin: 0; /* Optional: Resets default margin */
   padding: 0; /* Optional: Resets default padding */
 }
-.container {
-  max-width: 1440px; /* Adjust max-width as needed */
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
-/* Add additional CSS for responsiveness */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 10px;
-  }
-}
 
 /* 
 :root {
