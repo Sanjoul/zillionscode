@@ -21,8 +21,10 @@ const Navbar = () => {
         <nav>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-24">
-                    <div className="flex-shrink-0 flex items-center ">
-                        <Image src={Logo} alt="Logo" className="block w-36 lg:w-auto" />
+                    <div className="flex-shrink-0 flex items-center cursor-pointer">
+                        <a href="/">
+                            <Image src={Logo} alt="Logo" className="block w-36 lg:w-auto" />
+                        </a>
                     </div>
 
                     <div className="flex lg:hidden">
@@ -38,14 +40,14 @@ const Navbar = () => {
                         </button>
                     </div>
 
-                    <div className="*:text-white *:font-semibold *:text-lg *:px-4 *:py-2 hidden gap-4 lg:flex lg:items-center lg:justify-end lg:flex-1">
+                    <div className="*:text-white *:font-normal *:text-lg *:px-4 *:py-2 hidden gap-4 lg:flex lg:items-center lg:justify-end lg:flex-1">
                         <a href="#">Home</a>
                         <a href="#">Services</a>
                         <a href="#">Testimonials</a>
                         <a href="#">About</a>
                         <div className=" bg-white  cursor-pointer justify-center items-center gap-2.5 flex">
                             <a
-                                className="px-4 py-[12px] text-stone-950 text-sm font-bold font-['Aeonik TRIAL']"
+                                className="px-4 py-2 text-stone-950 text-xl font-bold font-['Aeonik TRIAL']"
                                 onClick={toggleContactDialog}
                             >
                                 Contact us
@@ -62,11 +64,11 @@ const Navbar = () => {
             </div>
 
             {isMenuOpen && (
-                <div className="lg:hidden">
-                    <a href="#" className="block px-3 py-2 text-white font-semibold text-lg">Home</a>
-                    <a href="#" className="block px-3 py-2 text-white font-semibold text-lg">About Us</a>
-                    <a href="#" className="block px-3 py-2 text-white font-semibold text-lg">Services</a>
-                    <a href="#" className="block px-3 py-2 text-white font-semibold text-lg">Testimonials</a>
+                <div className="lg:hidden *:text-white *:font-normal *:text-lg">
+                    <a href="#" className="block px-3 py-2 ">Home</a>
+                    <a href="#" className="block px-3 py-2 ">About Us</a>
+                    <a href="#" className="block px-3 py-2 ">Services</a>
+                    <a href="#" className="block px-3 py-2 ">Testimonials</a>
                     <div className="block px-3 py-2  bg-white  cursor-pointer justify-center items-center">
                         <button
                             className="text-stone-950 text-lg font-bold font-['Aeonik TRIAL']"
