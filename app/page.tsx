@@ -1,61 +1,15 @@
 "use client";
 import React, { useState } from "react";
-import ContactUs from "@/Components/ContactUs";
+import Navbar from "@/Components/Navbar";
 export default function Home() {
-  const [isContactOpen, setIsContactOpen] = useState(false);
 
-  const toggleContactDialog = () => {
-    setIsContactOpen(!isContactOpen);
-  };
 
   return (
     <>
-      <div className="w-[1440px] h-[4410px] relative bg-neutral-900">
-        <div className="w-[1440px] h-[1478px] left-[2px] top-[1560px] absolute bg-stone-900" />
+        <Navbar />
+        {/* <div className="w-[1440px] h-[1478px] left-[2px] top-[1560px] absolute bg-stone-900" />
         <div className="w-[927px] h-[575px] left-0 top-[137px] absolute bg-gradient-to-r from-neutral-800 to-neutral-700" />
-        <div className="w-[1440px] h-[100px] px-[148px] left-0 top-0 absolute justify-between items-center inline-flex">
-          <div className="flex-col justify-start items-start gap-[2.20px] inline-flex">
-            <div className="w-[166.67px] h-6 relative">
-              <img src="image.png" alt="" />
-            </div>
-          </div>
-          <div className="justify-start items-center gap-4 flex">
-            <div className="px-5 py-2.5 justify-center items-center gap-2.5 flex">
-              <div className="text-white text-sm font-normal font-['Inter']">
-                Home
-              </div>
-            </div>
-            <div className="px-5 py-2.5 justify-center items-center gap-2.5 flex">
-              <div className="text-white text-sm font-normal font-['Inter']">
-                Services
-              </div>
-            </div>
-            <div className="px-5 py-2.5 justify-center items-center gap-2.5 flex">
-              <div className="text-white text-sm font-normal font-['Inter']">
-                Testimonials
-              </div>
-            </div>
-            <div className="px-5 py-2.5 justify-center items-center gap-2.5 flex">
-              <div className="text-white text-sm font-normal font-['Inter']">
-                About
-              </div>
-            </div>
-            <div className="px-10 py-5 bg-white justify-center items-center gap-2.5 flex">
-              <button
-                className="text-stone-950 text-sm font-bold font-['Aeonik TRIAL']"
-                onClick={toggleContactDialog}
-              >
-                Contact us
-              </button>
 
-              {isContactOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                  <ContactUs onClose={toggleContactDialog} />
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
         <div className="left-[146px] top-[265px] absolute flex-col justify-start items-start gap-6 inline-flex">
           <div className="w-[462px]">
             <span className="text-white text-[40px] font-bold font-[Aeonik TRIAL]">
@@ -503,8 +457,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
     </>
   );
 }
