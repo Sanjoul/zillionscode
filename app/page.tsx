@@ -1,62 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import Navbar from "@/Components/Navbar";
+import Main from "./layout/Main";
 export default function Home() {
 
 
   return (
     <>
-        <Navbar />
-        {/* <div className="w-[1440px] h-[1478px] left-[2px] top-[1560px] absolute bg-stone-900" />
-        <div className="w-[927px] h-[575px] left-0 top-[137px] absolute bg-gradient-to-r from-neutral-800 to-neutral-700" />
-
-        <div className="left-[146px] top-[265px] absolute flex-col justify-start items-start gap-6 inline-flex">
-          <div className="w-[462px]">
-            <span className="text-white text-[40px] font-bold font-[Aeonik TRIAL]">
-              Known for
-            </span>
-            <span className="text-orange-600 text-[40px] font-normal font-[Aeonik Fono]"></span>
-            <span className="text-orange-600 text-[40px] font-bold font-[Aeonik Fono]">
-              {`<Best>`}
-            </span>
-            <span className="text-white text-[40px] font-bold font-[Aeonik TRIAL]">
-              Collaborative
-              <br />
-              Technology Partner
-            </span>
-            <span className="text-orange-600 text-[40px] font-bold font-[Aeonik TRIAL]">
-              _
-            </span>
-          </div>
-
-          <div className="w-[399px] text-white text-opacity-60 text-sm font-normal font-['Aeonik Fono']">
-            Your journey with us is marked by open communication and
-            collaborative ideation. We believe in building not just projects but
-            lasting partnerships.
-          </div>
-          <div className="justify-start items-start gap-2.5 inline-flex">
-            <div className="px-[30px] py-5 bg-orange-600 shadow justify-center items-center gap-2.5 flex">
-              <div className="text-white text-base font-bold font-['Aeonik TRIAL']">
-                Get a Quote !
-              </div>
-            </div>
-            <div className="p-5 border border-white justify-start items-center gap-2.5 flex">
-              <img
-                className="w-[19.41px] h-4 relative"
-                src="logos_google-meet.png"
-                alt=""
-              />
-              <div className="text-white text-base font-bold font-['Aeonik TRIAL']">
-                Let’s Google Meet
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-[410px] h-[91px] left-[927px] top-[543px] absolute bg-orange-600 shadow" />
-        <img
-          className="w-[588px] h-[347px] left-[704px] top-[242px] absolute"
-          src="hero.png"
-        />
+    <Main/>
+{/* 
         <div className="left-[146px] top-[712px] absolute flex-col justify-start items-start inline-flex">
           <div className="py-[100px] flex-col justify-start items-center gap-12 flex">
             <div className="flex-col justify-start items-center gap-[21px] flex">
