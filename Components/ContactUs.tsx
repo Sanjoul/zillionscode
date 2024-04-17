@@ -107,7 +107,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ onClose }) => {
           </button>
         </div>
         <div className="self-stretch text-white text-opacity-60 text-xs font-normal font-['Aeonik Fono']">
-          We're committed to your privacy. ZillionsCode uses the information you
+          We&apos;re committed to your privacy. ZillionsCode uses the information you
           provide to us to contact you about our relevant products, and
           services.
         </div>
