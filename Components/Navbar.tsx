@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import Logo from '../public/image.png';
+import Logo from '../public/icons/logo.svg';
 import crossSvg from '../public/icons/cross.svg';
 import menuSvg from '../public/icons/menu.svg';
 import ContactUs from './ContactUs';
@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav>
+        <nav className="fixed top-0 left-0 w-full bg-black z-10 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-24">
                     <div className="flex-shrink-0 flex items-center cursor-pointer">
