@@ -5,7 +5,7 @@ import Button from "./Button"
 const HeroSection = () => {
   return (
     <>
-      <div className="">
+      <div className=" my-28">
         <div className="w-8/12 flex-wrap flex flex-col my-8 bg-gradient-to-r from-neutral-800 to-neutral-800" >
 
           <div className=" px-28 py-36 flex flex-wrap flex-col gap-8 ">
