@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="w-8/12 flex-wrap flex flex-col my-8 bg-gradient-to-r from-neutral-800 to-neutral-800" >
 
           <div className=" px-28 py-36 flex flex-wrap flex-col gap-8 ">
-            <div className="md:text-lg lg:text-4xl  font-semibold text-white">Known For <span className="font-normal text-primary">{`<Best>`}</span> <br />
+            <div className="md:text-lg lg:text-4xl  font-bold text-white">Known For <span className="font-normal text-primary">{`<Best>`}</span> <br />
               Collaborative <br />
               Technology Partner<span className="font-normal text-primary">{`_`}</span>
             </div>
