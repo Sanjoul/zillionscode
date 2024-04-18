@@ -12,6 +12,7 @@ const config: Config = {
         'primary': '#F15A24',
         'gray':'#FFFFFF8C',
         'check':'#202020',
+        'custom-white':'#F5F5F5',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
