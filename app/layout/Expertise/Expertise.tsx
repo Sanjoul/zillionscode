@@ -4,7 +4,7 @@ import ExpertiseCard from "@/Components/ExpertiseCard";
 
 const Expertise = () => {
     return (
-        <div className="my-10 lg:my-28 h-full bg-white p-5 lg:p-14">
+        <div className="mt-10 h-full bg-white p-5 lg:p-14">
             <div className="flex flex-col lg:flex-row justify-between">
                 <div className="w-full flex flex-col gap-5 lg:w-2/3">
                     <p className="text-primary text-4xl font-bold">Our Expertise</p>

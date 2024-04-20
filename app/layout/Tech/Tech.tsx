@@ -12,7 +12,7 @@ import AWS from "@/public/Tech/aws.svg"
 
 const Tech = () => {
     return (
-        <div className="my-10 lg:my-28 h-full text-white text-center p-5 lg:p-14">
+        <div className="mt-10  h-full text-white text-center p-5 lg:p-14">
             <p className="text-4xl font-bold">Our Tech Stack<span className="font-normal text-primary">{`_`}</span></p>
             <div className=" flex items-center justify-evenly flex-wrap ">
                 <TechCard
