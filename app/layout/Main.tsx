@@ -3,6 +3,7 @@ import Navbar from "@/Components/Navbar"
 import Discover from "./Discover/Discover"
 import Expertise from "./Expertise/Expertise"
 import Tech from "./Tech/Tech"
+import Testimonials from "./Testimonials/Testimonials"
 const Main = () => {
     return (
         <div className="px-16 py-4">
@@ -11,6 +12,7 @@ const Main = () => {
             <Discover />
             <Expertise />
             <Tech />
+            <Testimonials />
         </div>
     )
 }
